@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>خطة إعلانات الدراسات العليا — Infinity University (KSA/GCC)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#0D3B66;       /* Primary */
+      --accent:#E0A100;      /* Accent */
+      --ink:#1b1b1b;         /* Body text */
+      --muted:#6b7280;       /* Muted text */
+      --card:#ffffff;        /* Card bg */
+      --bg:#F6F8FB;          /* Page bg */
+      --good:#0E9F6E;        /* success */
+      --warn:#B45309;        /* warning */
+      --danger:#B91C1C;      /* danger */
+      --chip:#eef2ff;        /* tag */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:"Tajawal", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:var(--bg); color:var(--ink); line-height:1.75;
+    }
+    a{color:var(--brand); text-decoration:none}
+    .container{max-width:1100px; margin:0 auto; padding:24px 16px 64px}
+    header{
+      position:sticky; top:0; z-index:50; backdrop-filter:saturate(180%) blur(8px);
+      background:linear-gradient(90deg, rgba(13,59,102,.95), rgba(13,59,102,.85)); color:#fff;
+      border-bottom:1px solid rgba(255,255,255,.12)
+    }
+    header .bar{display:flex; align-items:center; gap:16px; padding:12px 16px}
+    .brand{display:flex; align-items:center; gap:12px}
+    .brand .logo{width:36px; height:36px; border-radius:10px; background:linear-gradient(135deg, var(--accent), #ffd36e);
+      display:grid; place-items:center; color:#000; font-weight:800}
+    .brand h1{font-size:18px; margin:0; font-weight:800}
+    nav{margin-inline-start:auto; display:flex; flex-wrap:wrap; gap:12px}
+    nav a{color:#fff; opacity:.9; font-weight:600; padding:6px 10px; border-radius:8px}
+    nav a:hover{background:rgba(255,255,255,.12)}
+    .hero{padding:20px 0 6px}
+    .hero h2{margin:10px 0 6px; font-size:26px; color:#fff}
+    .hero p{margin:0; color:#eef2ff; opacity:.95}
+
+    /* Cards */
+    .grid{display:grid; gap:16px}
+    @media(min-width:720px){.grid{grid-template-columns:repeat(12,1fr)}}
+    .card{grid-column:1 / -1; background:var(--card); border:1px solid #e5e7eb; border-radius:16px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,.04)}
+    .col-6{grid-column:span 6}
+    .col-4{grid-column:span 4}
+    .col-8{grid-column:span 8}
+    .chip{display:inline-block; padding:4px 10px; border-radius:999px; background:var(--chip); color:#3730a3; font-weight:700; font-size:13px}
+    h3{margin:0 0 12px; font-size:20px}
+    h4{margin:14px 0 8px; font-size:17px}
+    .muted{color:var(--muted)}
+    .kpi{display:flex; gap:10px; flex-wrap:wrap}
+    .kpi .pill{background:#f1f5f9; padding:6px 10px; border-radius:10px; font-weight:700}
+    .list{margin:0; padding:0 18px}
+
+    table{width:100%; border-collapse:separate; border-spacing:0; overflow:hidden; border-radius:12px; border:1px solid #e5e7eb}
+    th,td{padding:10px 12px; text-align:right; border-bottom:1px solid #eef2f7}
+    th{background:#f8fafc; font-size:13px; color:#334155}
+    tr:last-child td{border-bottom:none}
+
+    .notice{background:#fffbea; border:1px solid #fde68a; color:#92400e; border-radius:12px; padding:12px}
+    .ok{background:#ecfdf5; border:1px solid #a7f3d0; color:#065f46; border-radius:12px; padding:12px}
+
+    .footer{margin-top:28px; color:#64748b; font-size:14px}
+    .btn{display:inline-block; padding:10px 14px; border-radius:10px; font-weight:800; border:1px solid #e5e7eb; background:#fff}
+    .btn.primary{background:var(--brand); color:#fff; border-color:transparent}
+
+    @media print{ header, .btn-print {display:none} body{background:#fff} .card{box-shadow:none; border-color:#ddd} }
+      html{scroll-behavior:smooth}
+    section{scroll-margin-top: 90px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar container">
+      <div class="brand">
+        <div class="logo">∞</div>
+        <h1>Infinity University — خطة إعلانات الدراسات العليا (KSA/GCC)</h1>
+      </div>
+      <nav>
+        <a href="#goals">الأهداف</a>
+        <a href="#personas">الجمهور</a>
+        <a href="#channels">القنوات</a>
+        <a href="#campaigns">هيكل الحملات</a>
+        <a href="#keywords">الكلمات المفتاحية</a>
+        <a href="#copy">النسخ الإعلانية</a>
+        <a href="#tracking">التتبع</a>
+        <a href="#timeline">الجدول الزمني</a>
+        <a href="#budget">الميزانية</a>
+        <a href="#kpis">KPIs</a>
+      </nav>
+    </div>
+    <div class="hero container">
+      <h2>تركيز: ماجستير & دكتوراه — السعودية أولاً والخليج ثانيًا</h2>
+      <p>نسخة صفحة قابلة للطباعة/النشر تُستخدم كخارطة تشغيل جاهزة للحملات الإعلانية.</p>
+      <div style="margin-top:10px" class="btn-print">
+        <a class="btn primary" href="#" onclick="window.print();return false;">طباعة / PDF</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Goals -->
+    <section id="goals" class="grid">
+      <div class="card col-8">
+        <div class="chip">Objectives</div>
+        <h3>الأهداف الرئيسية</h3>
+        <ul class="list">
+          <li>توليد <strong>Leads مؤهّلة</strong> لبرامج الماجستير والدكتوراه في <strong>السعودية</strong> (أولوية) و<strong>الخليج</strong>.</li>
+          <li>رفع <strong>نسبة التحويل Lead→Application</strong> عبر صفحات هبوط واضحة ودرب رعاية (Email/WhatsApp).</li>
+          <li>تقليل <strong>CPL</strong> وتحسين الجودة عبر <strong>Search (نية عالية)</strong> و<strong>LinkedIn (عناوين وظيفية)</strong>.</li>
+        </ul>
+        <div class="kpi">
+          <div class="pill">CPL</div>
+          <div class="pill">Lead→Application %</div>
+          <div class="pill">Time‑to‑Contact ≤ 10m</div>
+          <div class="pill">CTR / CPC</div>
+          <div class="pill">ROAS / Cost per Enrolment</div>
+        </div>
+      </div>
+      <div class="card col-4">
+        <div class="chip">UTM/Naming</div>
+        <h3>اتفاقية التسمية</h3>
+        <p class="muted">مثال: <code>INF-PG-{CHANNEL}-{COUNTRY}-{LANG}-{YYYYMM}</code></p>
+        <ul class="list">
+          <li><b>UTM Source</b>: google | meta | linkedin | youtube</li>
+          <li><b>UTM Campaign</b>: <code>inf-pg-ksa-masters-202509</code></li>
+          <li><b>UTM Content</b>: hookA | hookB | carousel1</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Personas -->
+        <!-- Personas -->
+    <section id="personas" class="grid">
+      <div class="card col-12">
+        <div class="chip">Personas</div>
+        <h3>شرائح الجمهور (KSA أولًا، ثم GCC)</h3>
+        <table>
+          <thead>
+            <tr><th>الشريحة</th><th>الوصف</th><th>الدول/المدن</th><th>المنصّات</th><th>إشارات الاستهداف</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fresh Graduates</td>
+              <td>خريجون حديثًا يبحثون عن بداية قوية في سوق العمل</td>
+              <td>السعودية (الرياض، جدة، الدمام) + الإمارات + الكويت + قطر + البحرين + عُمان</td>
+              <td>Meta, YouTube, Google</td>
+              <td>اهتمامات: جامعات، وظائف الخريجين، دورات مهنية؛ سلوك: زيارة مواقع تعليمية</td>
+            </tr>
+            <tr>
+              <td>Working Professionals</td>
+              <td>موظفون يرغبون في ترقية/تحوّل وظيفي من 1–10 سنوات خبرة</td>
+              <td>KSA + GCC</td>
+              <td>LinkedIn, Google, Meta</td>
+              <td>عناوين: Engineer, HR, Marketing, IT, Finance, Operations; صناعات: Health, Tech, Gov</td>
+            </tr>
+            <tr>
+              <td>Teaching Assistants & Lecturers</td>
+              <td>أكاديميون يتطلعون للترقّي العلمي (ماجستير/دكتوراه)</td>
+              <td>KSA + GCC</td>
+              <td>LinkedIn, Google</td>
+              <td>قطاع التعليم، مسميات: TA, Lecturer, Instructor; اهتمام بالبحث العلمي</td>
+            </tr>
+            <tr>
+              <td>Scholarship/Finance Seekers</td>
+              <td>مرشحون مهتمون بالمنح وخطط التقسيط</td>
+              <td>KSA + GCC</td>
+              <td>Google, Meta</td>
+              <td>كلمات: scholarships, fees, installments؛ زيارات لصفحات التمويل</td>
+            </tr>
+            <tr>
+              <td>Expats in KSA</td>
+              <td>مقيمون عرب/أجانب مهتمون بالدراسات العليا المعتمدة</td>
+              <td>KSA (مدن كبرى)</td>
+              <td>Google, LinkedIn, Meta</td>
+              <td>لغة الإعلان: EN/AR؛ اهتمامات: MBA/MSc/PhD؛ جغرافيا: أحياء الأعمال</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card col-12">
+        <div class="chip">Landing Pages</div>
+        <h3>صفحات الهبوط المطلوبة</h3>
+        <ul class="list">
+          <li><b>صفحة ماجستير</b> (Arabic/English) + نموذج Lead مختصر (الاسم، الهاتف، البريد، البرنامج) + زر WhatsApp واضح + FAQ (اعتماد/رسوم/شروط/مدة/منح) + قصص خريجين.</li>
+          <li><b>صفحة دكتوراه</b> بنفس الهيكل مع إبراز الإشراف البحثي وخبرة المشرفين.</li>
+          <li><b>صفحة منح/تمويل</b> منفصلة لإعلانات النية المالية (أقساط/خصومات مبكرة).</li>
+          <li><b>Thank‑you</b> لتتبع <code>application_complete</code> وتعريف مسار الرعاية.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Channels -->
+        <!-- Channels -->
+    <section id="channels" class="grid">
+      <div class="card col-4">
+        <div class="chip">Awareness</div>
+        <h3>قنوات التوعية</h3>
+        <ul class="list">
+          <li><b>YouTube</b>: Skippable In‑Stream 16:9 — قصص خريجين + Hook 5 ثوانٍ؛ مزادات tCPM.</li>
+          <li><b>Meta Reels/Stories</b>: 9:16 — لقطات واقعية، نصوص قصيرة؛ تحسين Reach/Impressions.</li>
+          <li><b>Snap/TikTok (اختياري)</b>: 6–15 ثانية لزيادة الوصول للشريحة الأصغر سنًا.</li>
+        </ul>
+        <p class="muted">أصول إبداعية: 2–3 نسخ فيديو + 3 ثوابت صور لكل قناة عند الإطلاق.</p>
+      </div>
+      <div class="card col-4">
+        <div class="chip">Consideration</div>
+        <h3>قنوات التفكير</h3>
+        <ul class="list">
+          <li><b>Google Search (AR/EN)</b>: RSA + Extensions؛ مزادات Maximize Conversions/tCPA.</li>
+          <li><b>LinkedIn Lead Gen</b>: Document Ad/Single Image لويبينار/استشارة 15 دقيقة.</li>
+          <li><b>Meta Traffic</b>: Carousel/Image 1:1 & 4:5 لعرض البرامج والرسوم.</li>
+          <li><b>GDN Remarketing</b>: قوائم 30/60/90 يوم؛ RDA.</li>
+        </ul>
+      </div>
+      <div class="card col-4">
+        <div class="chip">Conversion & Nurture</div>
+        <h3>التحويل & الرعاية</h3>
+        <ul class="list">
+          <li><b>Google Search Exact</b>: نوايا عالية + Call/Lead Form Extensions.</li>
+          <li><b>Meta Leads</b>: Instant Forms + Click‑to‑WhatsApp؛ استمارات قصيرة جدًا.</li>
+          <li><b>LinkedIn Conversation Ads</b>: حوار مباشر مع مستشار القبول.</li>
+          <li><b>Email/WhatsApp Drip</b>: 3–5 رسائل خلال 10 أيام (قصص خريجين، FAQ، التمويل).</li>
+        </ul>
+      </div>
+      <div class="card col-12">
+        <div class="ok"><b>ملاحظة تشغيلية:</b> استخدم ABO في أول 5–7 أيام على Meta لاختبار الكرييتيف، ثم انقل أفضل مجموعة إلى CBO للتوسيع.</div>
+      </div>
+    </section>
+
+    <!-- Campaign Matrix -->
+        <!-- Campaign Matrix -->
+    <section id="campaigns" class="grid">
+      <div class="card">
+        <div class="chip">Structure</div>
+        <h3>هيكل الحملات (TOF/MOF/BOF + Nurture)</h3>
+        <table>
+          <thead>
+            <tr><th>المرحلة</th><th>اسم الحملة</th><th>المنصة</th><th>الهدف</th><th>الجمهور</th><th>الصيغة</th><th>Optimization</th><th>KPIs</th><th>٪ ميزانية</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Awareness</td><td>INF‑TOF‑YouTube‑Alumni</td><td>YouTube</td><td>Reach</td><td>KSA 21–40</td><td>Skippable 16:9</td><td>tCPM</td><td>CPM, VTR</td><td>10%</td></tr>
+            <tr><td>Awareness</td><td>INF‑TOF‑Meta‑Reels</td><td>Meta</td><td>Reach</td><td>KSA/GCC</td><td>Reels 9:16</td><td>Reach</td><td>CPM, 3s Views</td><td>8%</td></tr>
+            <tr><td>Consideration</td><td>INF‑MOF‑Search‑Core‑AR/EN</td><td>Google</td><td>Traffic/Leads</td><td>High‑intent KW</td><td>RSA</td><td>Max Conv/tCPA</td><td>CTR, CPC</td><td>18%</td></tr>
+            <tr><td>Consideration</td><td>INF‑MOF‑LinkedIn‑LeadGen</td><td>LinkedIn</td><td>Leads</td><td>Job Titles</td><td>Form/Doc Ad</td><td>Max Leads</td><td>CPL, Quality</td><td>10%</td></tr>
+            <tr><td>Consideration</td><td>INF‑MOF‑Meta‑Traffic</td><td>Meta</td><td>Traffic</td><td>Interests + 30d</td><td>Carousel/Image</td><td>LP Views</td><td>CPC, LP View</td><td>10%</td></tr>
+            <tr><td>Consideration</td><td>INF‑MOF‑GDN‑RMK</td><td>Google</td><td>RMK</td><td>Visitors 30/60/90</td><td>RDA</td><td>tCPA</td><td>CTR</td><td>5%</td></tr>
+            <tr><td>Conversion</td><td>INF‑BOF‑Search‑Exact</td><td>Google</td><td>Leads</td><td>Exact intent</td><td>RSA + Ext</td><td>tCPA</td><td>CPL, CVR</td><td>15%</td></tr>
+            <tr><td>Conversion</td><td>INF‑BOF‑Meta‑Leads‑WA</td><td>Meta</td><td>Leads</td><td>Retarget + LAL</td><td>Instant Form/WA</td><td>Leads</td><td>CPL</td><td>12%</td></tr>
+            <tr><td>Conversion</td><td>INF‑BOF‑LinkedIn‑ConvAds</td><td>LinkedIn</td><td>Leads</td><td>Nurtured titles</td><td>Conv Ads</td><td>Leads</td><td>CPL</td><td>6%</td></tr>
+            <tr><td>Nurture</td><td>INF‑CRM‑Email/WA‑Drip</td><td>CRM</td><td>Applications</td><td>All leads</td><td>3–5 msgs/10d</td><td>—</td><td>Replies, Apps</td><td>2%</td></tr>
+          </tbody>
+        </table>
+        <h4 style="margin-top:16px">Retargeting & Lookalikes</h4>
+        <table>
+          <thead><tr><th>النوع</th><th>النطاق</th><th>ملاحظات</th></tr></thead>
+          <tbody>
+            <tr><td>Website Visitors</td><td>30 / 60 / 90 يوم</td><td>استثناء المحوّلين؛ تقسيم حسب الصفحات (Masters/PhD/Finance)</td></tr>
+            <tr><td>Engagers (Meta/YouTube)</td><td>7 / 14 / 30 يوم</td><td>مشاهدات الفيديو + تفاعل مع الحساب</td></tr>
+            <tr><td>CRM Leads</td><td>≤ 180 يوم</td><td>بذور Lookalike 1–3% (الأفضل جودة)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Keywords -->
+        <!-- Keywords -->
+    <section id="keywords" class="grid">
+      <div class="card col-6">
+        <div class="chip">Keywords — AR</div>
+        <h3>كلمات مفتاحية عالية النية (عربي)</h3>
+        <table>
+          <thead><tr><th>Ad Group</th><th>Match</th><th>Keyword</th></tr></thead>
+          <tbody>
+            <tr><td>Masters (AR)</td><td>Exact</td><td>ماجستير معتمد | ماجستير عن بعد معتمد | التسجيل في ماجستير</td></tr>
+            <tr><td>Masters (AR)</td><td>Phrase</td><td>رسوم ماجستير | شروط القبول ماجستير | موعد التقديم ماجستير</td></tr>
+            <tr><td>PhD (AR)</td><td>Exact</td><td>التقديم على دكتوراه | برامج دكتوراه معتمدة | دكتوراه عن بعد</td></tr>
+            <tr><td>Finance/Deadlines (AR)</td><td>Phrase</td><td>منح ماجستير | منح دكتوراه | أقساط ماجستير | تمويل ماجستير</td></tr>
+            <tr><td>Geo (AR)</td><td>Phrase</td><td>ماجستير في السعودية | ماجستير في الرياض | ماجستير في جدة</td></tr>
+          </tbody>
+        </table>
+        <h4>Negatives (AR)</h4>
+        <table>
+          <thead><tr><th>Match</th><th>Keyword</th></tr></thead>
+          <tbody>
+            <tr><td>Phrase</td><td>"رسائل ماجستير جاهزة" | "تحميل رسالة ماجستير" | "بحث تخرج"</td></tr>
+            <tr><td>Exact</td><td>وظائف | رواتب | مجاني</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card col-6">
+        <div class="chip">Keywords — EN</div>
+        <h3>High‑Intent Keywords (English)</h3>
+        <table>
+          <thead><tr><th>Ad Group</th><th>Match</th><th>Keyword</th></tr></thead>
+          <tbody>
+            <tr><td>Masters (EN)</td><td>Exact</td><td>accredited master's program | apply for master's | master's tuition fees</td></tr>
+            <tr><td>Masters (EN)</td><td>Phrase</td><td>master's admission requirements | online master's degree accredited</td></tr>
+            <tr><td>PhD (EN)</td><td>Exact</td><td>apply for PhD | accredited PhD programs | PhD scholarships</td></tr>
+            <tr><td>Geo (EN)</td><td>Phrase</td><td>master's in Saudi Arabia | master's in Riyadh | master's in Jeddah | MBA in Saudi Arabia</td></tr>
+          </tbody>
+        </table>
+        <h4>Negatives (EN)</h4>
+        <table>
+          <thead><tr><th>Match</th><th>Keyword</th></tr></thead>
+          <tbody>
+            <tr><td>Exact</td><td>free | jobs | salary</td></tr>
+            <tr><td>Phrase</td><td>download thesis | thesis pdf | chegg</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Copy -->
+    <section id="copy" class="grid">
+      <div class="card col-6">
+        <div class="chip">Search RSA</div>
+        <h3>أمثلة عناوين/وصف — Google Search (AR)</h3>
+        <p><b>عناوين:</b> ماجستير معتمد بمرونة | قدِّم الآن | متطلبات قبول واضحة | أماكن محدودة | تواصل واتساب</p>
+        <p><b>وصف:</b> برامج دراسات عليا بمرونة واعتماد. اعرف الرسوم والمتطلبات وقدّم الآن. احجز استشارة قبول قصيرة.</p>
+        <h4>English</h4>
+        <p><b>Headlines:</b> Accredited Master’s | Apply Now | Flexible Schedules | Installments Available | Speak to Admissions</p>
+        <p><b>Description:</b> Get an accredited postgraduate degree with flexible study plans. Check fees & requirements and apply now.</p>
+      </div>
+      <div class="card col-6">
+        <div class="chip">Hooks & CTAs</div>
+        <h3>Hooks للفيديو & دعوات الإجراء</h3>
+        <ul class="list">
+          <li><b>YouTube (5s):</b> "جاهز تخطو الخطوة اللي تفرّق؟" — قصة خريج قبل/بعد.</li>
+          <li><b>Meta Reels:</b> مزايا الاعتماد + مرونة + أقساط، شواهد خريجين.</li>
+          <li><b>CTAs:</b> قدّم الآن | احجز استشارة | تواصل واتساب | اعرف المزيد</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Tracking -->
+        <!-- Tracking -->
+    <section id="tracking" class="grid">
+      <div class="card col-8">
+        <div class="chip">GTM/GA4</div>
+        <h3>أحداث التتبع</h3>
+        <table>
+          <thead><tr><th>Event</th><th>الوصف</th><th>ملاحظات تنفيذ</th></tr></thead>
+          <tbody>
+            <tr><td>lead_submit</td><td>إرسال نموذج على صفحات الماجستير/الدكتوراه</td><td>إرسال إلى GA4 + Google Ads + Meta + LinkedIn</td></tr>
+            <tr><td>whatsapp_click</td><td>نقر زر واتساب</td><td>التقاط UTM/phone — تخزين 90 يوم</td></tr>
+            <tr><td>application_start</td><td>بدء نموذج التقديم</td><td>مرة لكل جلسة</td></tr>
+            <tr><td>application_complete</td><td>صفحة الشكر</td><td>Enhanced Conversions إن أمكن</td></tr>
+            <tr><td>call_click</td><td>نقر الاتصال (موبايل)</td><td>يفضّل أرقام تتبّع</td></tr>
+          </tbody>
+        </table>
+        <h4>dataLayer (مثال)</h4>
+        <pre style="background:#0b1020;color:#e5e7eb;padding:12px;border-radius:10px;overflow:auto"><code>{
+window.dataLayer = window.dataLayer || [];
+// Lead Submit
+function pushLead(fields){
+  dataLayer.push({
+    event: 'lead_submit',
+    program: fields.program, // 'masters' | 'phd'
+    name: fields.name,
+    phone: fields.phone,
+    email: fields.email,
+    source: getUrlParam('utm_source'),
+    campaign: getUrlParam('utm_campaign'),
+    content: getUrlParam('utm_content')
+  });
+}
+// WhatsApp Click
+function pushWA(){
+  dataLayer.push({
+    event: 'whatsapp_click',
+    program: detectProgramFromURL(),
+    phone: '+966…',
+    source: getUrlParam('utm_source')
+  });
+}
+}
+</code></pre>
+      </div>
+      <div class="card col-4">
+        <div class="chip">SLA</div>
+        <h3>سرعة التعامل مع الـ Leads</h3>
+        <ul class="list">
+          <li><b>≤ 10 دقائق:</b> اتصال/واتساب أولي.</li>
+          <li><b>3 محاولات/48 ساعة:</b> ثم نقل لمسار nurture.</li>
+          <li><b>CRM Fields:</b> المصدر، القناة، الحملة، البرنامج، ملاحظة الجودة.</li>
+        </ul>
+        <div class="ok" style="margin-top:10px"><b>تذكير:</b> اربط GA4 بـ Google Ads، واستورد التحويلات (lead_submit & application_complete) مع استخدام Enhanced Conversions.</div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+        <!-- Timeline -->
+    <section id="timeline" class="grid">
+      <div class="card">
+        <div class="chip">30‑Day Sprint</div>
+        <h3>الجدول الزمني المختصر</h3>
+        <table>
+          <thead><tr><th>الأسبوع</th><th>التركيز</th><th>مهام رئيسية</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Setup & QA</td><td>GTM/GA4 + Pixels + إعداد صفحات الهبوط (ماجستير/دكتوراه/منح) + كتابة/تصميم الإعلانات + استيراد الكلمات + ضبط UTM + اختبارات تقنية</td></tr>
+            <tr><td>2</td><td>Launch & Test</td><td>تشغيل Search AR/EN + Meta Reels/Leads + LinkedIn Lead Gen — A/B (Hooks/Visuals/Forms) + إعداد تنبيهات CPL/CVR</td></tr>
+            <tr><td>3</td><td>Scale Winners</td><td>تحويل الميزانية للأفضل أداءً + Lookalikes من leads عالية الجودة + توسيع Exact + تحسين Negatives + تحسين سرعة/تحويل صفحة الهبوط</td></tr>
+            <tr><td>4</td><td>Push to Convert</td><td>تعزيز BOF قبل أي ديدلاين + حملات عروض محدودة + Nurture عبر Email/WA + مراجعة ختامية وخارطة الشهر التالي</td></tr>
+          </tbody>
+        </table>
+        <div class="notice" style="margin-top:10px"><b>Tip:</b> في حال وجود موعد تقديم قريب، زِد حصة Search/Leads وخفّض Awareness خلال الأسبوعين 3–4.</div>
+      </div>
+    </section>
+
+    <!-- Budget -->
+        <!-- Budget -->
+    <section id="budget" class="grid">
+      <div class="card col-8">
+        <div class="chip">Budget</div>
+        <h3>توزيع الميزانية الإرشادي حسب القنوات</h3>
+        <table id="budgetTable">
+          <thead><tr><th>القناة</th><th>النسبة</th><th>المبلغ (SAR)</th></tr></thead>
+          <tbody>
+            <tr><td>Google (Search+GDN+YouTube)</td><td data-share="43">43%</td><td class="amt"></td></tr>
+            <tr><td>Meta (IG/FB)</td><td data-share="30">30%</td><td class="amt"></td></tr>
+            <tr><td>LinkedIn</td><td data-share="16">16%</td><td class="amt"></td></tr>
+            <tr><td>Snap/TikTok (اختياري)</td><td data-share="4">4%</td><td class="amt"></td></tr>
+            <tr><td>CRM/WhatsApp/Tools</td><td data-share="7">7%</td><td class="amt"></td></tr>
+          </tbody>
+        </table>
+        <div style="margin-top:10px; display:flex; gap:8px; align-items:center">
+          <label for="total">إجمالي ميزانية الشهر (SAR):</label>
+          <input id="total" type="number" value="60000" style="padding:8px 10px; border-radius:10px; border:1px solid #e5e7eb; width:160px"/>
+          <button class="btn" onclick="calcBudget()">تحديث المبالغ</button>
+        </div>
+        <h4 style="margin:16px 0 8px">توزيع حسب المسار (Funnel)</h4>
+        <table id="funnelTable">
+          <thead><tr><th>المرحلة</th><th>النسبة</th><th>المبلغ (SAR)</th></tr></thead>
+          <tbody>
+            <tr><td>TOF (Awareness)</td><td data-share="22">22%</td><td class="amt"></td></tr>
+            <tr><td>MOF (Consideration)</td><td data-share="43">43%</td><td class="amt"></td></tr>
+            <tr><td>BOF (Conversion)</td><td data-share="33">33%</td><td class="amt"></td></tr>
+            <tr><td>CRM/Nurture</td><td data-share="2">2%</td><td class="amt"></td></tr>
+          </tbody>
+        </table>
+        <h4 style="margin:16px 0 8px">توزيع جغرافي</h4>
+        <table id="geoTable">
+          <thead><tr><th>المنطقة</th><th>النسبة</th><th>المبلغ (SAR)</th></tr></thead>
+          <tbody>
+            <tr><td>السعودية (KSA)</td><td data-share="70">70%</td><td class="amt"></td></tr>
+            <tr><td>الخليج (GCC)</td><td data-share="30">30%</td><td class="amt"></td></tr>
+          </tbody>
+        </table>
+        <p class="muted" style="margin-top:8px">يمكن تعديل النِّسَب حسب الأداء والـ deadlines. الحاسبات لأغراض توضيحية.</p>
+      </div>
+      <div class="card col-4">
+        <div class="chip">ملاحظة</div>
+        <div class="notice">
+          <b>الالتزام بالادّعاءات:</b> أي ذِكر للاعتماد/الاعتراف يجب أن يكون دقيقًا ومسنودًا بصفحات رسمية على موقع Infinity.
+        </div>
+      </div>
+    </section>
+
+    <!-- KPIs -->
+        <!-- KPIs -->
+    <section id="kpis" class="grid">
+      <div class="card col-6">
+        <div class="chip">KPIs</div>
+        <h3>مؤشرات الأداء وماذا تعني</h3>
+        <table>
+          <thead><tr><th>KPI</th><th>التعريف</th><th>هدف مبدئي</th><th>تنبيه إذا…</th></tr></thead>
+          <tbody>
+            <tr><td>CTR</td><td>نسبة النقر إلى الظهور</td><td>≥ 1.5% Search | ≥ 0.8% Display/Meta</td><td>< 1% (Search) أو هبوط مستمر 3 أيام</td></tr>
+            <tr><td>CPC</td><td>تكلفة النقرة</td><td>تنافسي حسب القناة والكلمات</td><td>ارتفاع > 30% أسبوعيًا دون تحسّن في الجودة</td></tr>
+            <tr><td>CPL</td><td>تكلفة الحصول على Lead</td><td>أقل ما يمكن مع الحفاظ على الجودة</td><td>تجاوز الهدف 25%+ لمدة أسبوع</td></tr>
+            <tr><td>Lead→App %</td><td>تحويل Lead إلى طلب التحاق</td><td>≥ 20% مبدئيًا</td><td>< 10% → راجع الصفحة/الفورم والمتابعة السريعة</td></tr>
+            <tr><td>Time‑to‑Contact</td><td>زمن الاتصال الأول</td><td>≤ 10 دقائق</td><td>> 30 دقيقة متوسط 24 ساعة</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card col-6">
+        <div class="chip">Check‑list</div>
+        <h3>قائمة سريعة قبل الإطلاق</h3>
+        <ul class="list">
+          <li>صفحات هبوط منفصلة (ماجستير/دكتوراه/منح) + Thank‑you.</li>
+          <li>GTM + GA4 + Pixels + Events (lead_submit, application_complete...).</li>
+          <li>UTM/Naming ثابتة + تخزين gclid/fbclid/utm 90 يوم.</li>
+          <li>نصوص عربية/إنجليزية متوافقة مع السعودية.</li>
+          <li>خطة رعاية Leads (Email/WhatsApp) + قوالب جاهزة.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="footer">© Infinity University — Postgrad Ads Plan (KSA/GCC). إصدار: <span id="ver"></span></div>
+  </main>
+
+      <script>
+    function calcTableAmounts(tableId){
+      const total = +document.getElementById('total')?.value || 0;
+      document.querySelectorAll(`#${tableId} tbody tr`).forEach(tr=>{
+        const shareCell = tr.querySelector('td[data-share]');
+        if(!shareCell) return;
+        const share = +shareCell.dataset.share;
+        const amtCell = tr.querySelector('.amt');
+        if(!amtCell) return;
+        const amt = Math.round(total * share / 100).toLocaleString('en-US');
+        amtCell.textContent = amt;
+      });
+    }
+    function calcBudget(){
+      ['budgetTable','funnelTable','geoTable'].forEach(calcTableAmounts);
+    }
+    function smoothAnchorNav(){
+      const header = document.querySelector('header');
+      const pad = (header?.offsetHeight || 0) + 8; // offset for sticky header
+      document.querySelectorAll('header nav a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', (ev)=>{
+          ev.preventDefault();
+          const id = a.getAttribute('href').slice(1);
+          const el = document.getElementById(id);
+          if(!el){ console.warn('Section not found:', id); return; }
+          const y = el.getBoundingClientRect().top + window.pageYOffset - pad;
+          try { window.scrollTo({ top: y, behavior: 'smooth' }); }
+          catch(e){ window.scrollTo(0, y); }
+          try { history.replaceState(null, '', '#' + id); } catch(e) {}
+        });
+      });
+    }
+    // init
+    calcBudget();
+    smoothAnchorNav();
+    const verEl = document.getElementById('ver');
+    if (verEl) verEl.textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
